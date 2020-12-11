@@ -31,7 +31,7 @@ const WeatherPage = ({weather, onRouteChange}) => {
     return ( 
         <Container>
             <WeatherCard>
-            <ReturnArrow  size={25} onClick={onRouteChange}/>
+            <ReturnArrow aria-label='Return to Home Page' size={25} onClick={onRouteChange}/>
                 <Header>
                     <City>{weather.city}</City>
                 </Header>

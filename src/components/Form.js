@@ -15,8 +15,8 @@ const Home = ({onCitySelect, onInputChange, route, errorMessage}) => {
             </Header>
             <Description> a Canadian weather app </Description>
             <FormInput id={route}>
-              <CityInput type='text' placeholder='Enter City Name' onChange={onInputChange} />
-              <CitySubmit onClick={onCitySelect}><VscTriangleRight size={25}/></CitySubmit>
+              <CityInput aria-label='Enter City Name' type='text' placeholder='Enter City Name' onChange={onInputChange} />
+              <CitySubmit aria-label='Submit' onClick={onCitySelect}><VscTriangleRight size={25}/></CitySubmit>
             </FormInput> 
             <ErrorMessage id={route}> error: {errorMessage} </ErrorMessage>
             <br/>
